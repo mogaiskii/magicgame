@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+   *{
+     padding: 0;
+     margin: 0;
+   }
+   html{
+     font-size: 20px;
+     background: gray;
+   }
+    #app{
+      margin: 5px;
+      background: lightblue;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      width: 95vw;
+      height: 50vh;
+    }
+    .controls{
+      dislay:flex;
+      flex-direction: column;
+    }
+    .controlls-row{
+      display: flex;
+      width: 40vw;
+      margin:0 auto 15px;
+      justify-content: space-around;
+    }
+    .controlls-row>kbd{
+      color: gold;
+      border-radius: 5px;
+      border: 3px solid black;
+      padding: 5px;
+      width: 5em;
+      height: 3.5em;
+      text-align: center;
+      background-color: rgba(34,34,34,0.4);
+    }
+    #space{
+      width: 20em;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="app"></canvas>
+  <div class="controlls-row">
+    <kbd>
+      <h2>A</h2>
+      <p>Left</p>
+    </kbd>
+    <kbd>
+      <h2>W</h2>
+      <p>Jump</p>
+    </kbd>
+    <kbd>
+      <h2>D</h2>
+      <p>Right</p>
+    </kbd>
+  </div>
+  <div class="controlls-row">
+    <kbd>
+      <h2>J</h2>
+      <p>Fire</p>
+    </kbd>
+    <kbd>
+      <h2>K</h2>
+      <p>Water</p>
+    </kbd>
+    <kbd>
+      <h2>I</h2>
+      <p>Attack</p>
+    </kbd>
+    <kbd>
+      <h2>L</h2>
+      <p>Shield</p>
+    </kbd>
+  </div>
+  <div class="controlls-row">
+    <kbd id="space">
+      <h2>SPACE</h2>
+      <p>Submit</p>
+    </kbd>
+    </kbd>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
